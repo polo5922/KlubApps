@@ -47,26 +47,13 @@ var app = {
         console.log('Received Event: ' + id);
     }
 };
-
-$.event.special.swipe.scrollSupressionThreshold = 10; // More than this horizontal displacement, and we will suppress scrolling.
-$.event.special.swipe.horizontalDistanceThreshold = 30; // Swipe horizontal displacement must be more than this.
-$.event.special.swipe.durationThreshold = 500;  // More time than this, and it isn't a swipe.
-$.event.special.swipe.verticalDistanceThreshold = 75; // Swipe vertical displacement must be less than this.
-
-$(".gesteDect").swiperight(function(){
-  openNav();
-});
-
-/* Set the width of the side  to 250px and the left margin of the page content to 250px and add a black background color to body */
 function openNav() {
   document.getElementById("mySidenav").style.width = "250px";
-  document.getElementById("main").style.marginLeft = "250px";
   document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
 }
 
 /* Set the width of the side navigation to 0 and the left margin of the page content to 0, and the background color of body to white */
 function closeNav() {
   document.getElementById("mySidenav").style.width = "0";
-  document.getElementById("main").style.marginLeft = "0";
   document.body.style.backgroundColor = "white";
 }
