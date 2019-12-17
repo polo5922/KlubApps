@@ -45,9 +45,14 @@ body {
     width:100%;
 }
 
+.logo{
+  position: absolute;
+  top: 70px;
+  left: 80px;
+}
+
 /* Portrait layout (default) */
 .app {
-    background:url(../img/logo.png) no-repeat center top; /* 170px x 200px */
     position:absolute;             /* position in the center of the screen */
     left:50%;
     top:50%;
@@ -158,6 +163,11 @@ h1 {
   padding: 20px;
 }
 
+.nav-active {
+  background-color: #6c6c6c;
+  color:#ffffff;
+}
+
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
@@ -167,7 +177,7 @@ h1 {
 
 #nav-toggle span { position: relative; left: 5%; top: 5%; }
 
-#nav-toggle span, 
+#nav-toggle span,
 #nav-toggle span:before,
 #nav-toggle span:after {
   cursor: pointer;
@@ -183,5 +193,5 @@ h1 {
   top: -10px;
 }
 #nav-toggle span:after {
-  bottom: -10px; 
+  bottom: -10px;
 }
